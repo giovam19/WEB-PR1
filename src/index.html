@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Task Form</title>
+        <link rel="stylesheet" href="css/form.css">
+    </head>
+    
+    <body>
+        <main>
+            <section class="wrapper">
+                <!-- selector de imagen -->
+                <section class="image-selector">
+                    <div class="row">
+                        <img src="media/img/logo1.png" alt="actual-logo" width="60" id="logo">
+                        <div id="list-images">
+                            <img src="media/img/logo1.png" alt="logo1" id="logo1">
+                            <img src="media/img/logo2.png" alt="logo2" id="logo2">
+                            <img src="media/img/logo3.png" alt="logo3" id="logo3">
+                            <img src="media/img/logo4.png" alt="logo4" id="logo4">
+                            <img src="media/img/logo5.png" alt="logo5" id="logo5">
+                            <img src="media/img/logo6.png" alt="logo6" id="logo6">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Form -->
+                <section class="form">
+                    <form id="taskForm">
+                        <div class="row">
+                            <div id="titles">
+                                <label for="title" style="color: #6247AA;">Title</label>
+                                <input type="text" id="title" name="title">
+                            </div>
+    
+                            <div>
+                                <label for="deadline">Deadline</label>
+                                <input type="text" id="deadline" name="deadline">
+                            </div>
+                        </div>
+
+                        <div style="width: 200px;">
+                            <label for="Category">Category</label>
+                            <select name="category" id="category" >
+                                <option value="">Select category</option>
+                                <option value="development">Development</option>
+                                <option value="miscellaneous">Miscellaneous</option>
+                                <option value="personal_projects">Personal Projects</option>
+                                <option value="uni_projects">Uni Projects</option>
+                            </select>
+                        </div>
+
+                        <label for="description">Description</label>
+                        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+
+                        <p id="warning" class="warning"></p>
+
+                        <div id="buttons" class="row">
+                            <input type="checkbox" id="completed" name="completed">
+                            <label for="completed">  Completed</label>
+                            <div>
+                                <input type="submit" value="Cancel" id="cancel">
+                                <input type="submit" value="Accept" id="accept">
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </section>
+        </main>
+    </body>
+    <script type="text/javascript" src="js/form.js"></script>
+</html>
